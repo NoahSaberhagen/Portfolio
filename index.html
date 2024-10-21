@@ -7,137 +7,151 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
     <title>Noah Saberhagen - Software Developer</title>
 </head>
-<body>
-    <h1>Noah Saberhagen</h1>
-    <h2>Delivering quality and forward-thinking software solutions.</h2>
-    <sl-tab-group placement="start">
-      <sl-tab slot="nav" panel="about me">About Me</sl-tab>
-      <sl-tab slot="nav" panel="solo projects">Solo Projects</sl-tab>
-      <sl-tab slot="nav" panel="independent contributor">Independent Contributor</sl-tab>
-
-      <sl-tab-panel name="about me">
-        <div id="about-me-header">
-          <p>Welcome to my page!</p>
+<body style="padding: 1rem;">
+  <h1>Noah Saberhagen</h1>
+  <h2>Delivering quality and forward-thinking software solutions.</h2>
+  <sl-tab-group id="main-tab-group">
+    <sl-tab slot="nav" panel="about me">About Me</sl-tab>
+    <sl-tab slot="nav" panel="solo projects">Solo Projects</sl-tab>
+    <sl-tab slot="nav" panel="independent contributor">Independent Contributor</sl-tab>
+    <sl-tab-panel name="about me">
+      <img id="headshot" src="./assets/noah-headshot.jpg" alt="A picture of my face.">
+      <p>Welcome to my page! I'm a software developer with 2 years of experience building web and mobile applications.</p>
+      <p>You can find me here:</p>
+      <a href="https://github.com/NoahSaberhagen" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/noah-saberhagen-358637152/" target="_blank">LinkedIn</a>
+      <sl-tab-group>
+        <sl-tab slot="nav" panel="core competencies">Core Competencies</sl-tab>
+        <sl-tab-panel name="core competencies">
+          <sl-tree>
+            <sl-tree-item>
+              Frontend Development
+              <sl-tree-item>Hypertext Markup Language (HTML) / Cascading Style Sheets (CSS)</sl-tree-item>
+              <sl-tree-item>Javascript / Typescript / Node.js</sl-tree-item>
+              <sl-tree-item>React / React Native</sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              Backend Development
+              <sl-tree-item>MySQL</sl-tree-item>
+              <sl-tree-item>
+                Document Databases / NoSQL
+                <sl-tree-item>MongoDB</sl-tree-item>
+                <sl-tree-item>Elasticsearch</sl-tree-item>
+              </sl-tree-item>
+              <sl-tree-item>Express.js</sl-tree-item>
+              <sl-tree-item>
+                Object-Relational Mapping (ORM)
+                <sl-tree-item>Kysely</sl-tree-item>
+                <sl-tree-item>Prisma</sl-tree-item>
+              </sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              Application Programming Interface (API) Protocols
+              <sl-tree-item>Representational State Transfer (REST)</sl-tree-item>
+              <sl-tree-item>Typescript Remote Procedure Call (tRPC)</sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              Cloud Services
+              <sl-tree-item>
+                Amazon Web Services
+                <sl-tree-item>S3</sl-tree-item>
+                <sl-tree-item>R2</sl-tree-item>
+              </sl-tree-item>
+              <sl-tree-item>Vercel</sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              Containerization
+              <sl-tree-item>Docker</sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              Version Control
+              <sl-tree-item>Git</sl-tree-item>
+              <sl-tree-item>Github / Gitlab</sl-tree-item>
+            </sl-tree-item>
+          </sl-tree>
+        </sl-tab-panel>
+      </sl-tab-group>
+    </sl-tab-panel>
+    <sl-tab-panel name="solo projects">
+      <sl-card class="card-overview card">
+        <div style="display: flex; flex-direction: row; padding: 2rem;">
+          <div>
+            <strong>Appliance Tracker</strong>
+            <p>Appliance Tracker (work in progress) will help users to keep track of who is using household appliances in real time, as well as who's next in line to use them.</p>
+            <p>Users will be able to create accounts with Apple or Google credentials, make groups with other users, and make appliances.</p>
+            <p>When it's someone's turn to use an appliance, they'll be sent a push notification.</p>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <img id="appliance-tracker" src="./assets/appliance-tracker.png" alt="A screenshot of my app, appliance tracker">
+          </div>
         </div>
-        <sl-tab-group>
-          <sl-tab slot="nav" panel="core competencies">Core Competencies</sl-tab>
-
-          <sl-tab-panel name="core competencies">
-            <sl-tree>
-              <sl-tree-item>
-                Frontend Development
-                <sl-tree-item>Hypertext Markup Language (HTML) / Cascading Style Sheets (CSS)</sl-tree-item>
-                <sl-tree-item>Javascript / Typescript / Node.js</sl-tree-item>
-                <sl-tree-item>React / React Native</sl-tree-item>
-              </sl-tree-item>
-              <sl-tree-item>
-                Backend Development
-                <sl-tree-item>MySQL</sl-tree-item>
-                <sl-tree-item>
-                  Document Databases / NoSQL
-                  <sl-tree-item>MongoDB</sl-tree-item>
-                  <sl-tree-item>Elasticsearch</sl-tree-item>
-                </sl-tree-item>
-                <sl-tree-item>Express.js</sl-tree-item>
-                <sl-tree-item>
-                  Object-Relational Mapping (ORM)
-                  <sl-tree-item>Kysely</sl-tree-item>
-                  <sl-tree-item>Prisma</sl-tree-item>
-                </sl-tree-item>
-              </sl-tree-item>
-              <sl-tree-item>
-                Application Programming Interface (API) Protocols
-                <sl-tree-item>Representational State Transfer (REST)</sl-tree-item>
-                <sl-tree-item>Typescript Remote Procedure Call (tRPC)</sl-tree-item>
-              </sl-tree-item>
-              <sl-tree-item>
-                Cloud Services
-                <sl-tree-item>
-                  Amazon Web Services
-                  <sl-tree-item>S3</sl-tree-item>
-                  <sl-tree-item>R2</sl-tree-item>
-                </sl-tree-item>
-                <sl-tree-item>Vercel</sl-tree-item>
-              </sl-tree-item>
-              <sl-tree-item>
-                Containerization
-                <sl-tree-item>Docker</sl-tree-item>
-              </sl-tree-item>
-              <sl-tree-item>
-                Version Control
-                <sl-tree-item>Git</sl-tree-item>
-                <sl-tree-item>Github / Gitlab</sl-tree-item>
-              </sl-tree-item>
-            </sl-tree>
-          </sl-tab-panel>
-        </sl-tab-group>
-      </sl-tab-panel>
-      <sl-tab-panel name="solo projects"></sl-tab-panel>
-      <sl-tab-panel name="independent contributor"></sl-tab-panel>
-
-      <sl-tab-panel name="independent contributor">
-        <p>I've worked with numerous clients to build web and mobile applications for their businesses. Details below.</p>
-        <sl-details summary="Neobyte" class="custom-icons">
-          <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
-          <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
-          <sl-tag variant="neutral">Typescript</sl-tag>
-          <sl-tag variant="neutral">Amazon Web Services</sl-tag>
-          <sl-tag variant="neutral">Full Stack Development</sl-tag>
-          <sl-tag variant="neutral">Mobile Development</sl-tag>
-          <p>For two years I worked with another developer to build a mobile podcast streaming service from the ground up: Neobyte.</p>
-          <p>The other developer was also the founder and my mentor, and his teachings continue to be invaluable to this day.</p>
-          <p>At Neobyte I had the opportunity to implement features and fixes on a huge variety of full stack issues, such as:</p>
-          <ul>
-            <li>User interface design and navigation using React Native with Expo</li>
-            <li>API development with tRPC</li>
-            <li>User authentication, sign-in with Apple and Google, JSON Web Tokens (JWT)</li>
-            <li>Integrating multiple servers and databases (SQL and Elasticsearch)</li>
-            <li>Dependency injection patterns</li>
-            <li>...and many more!</li>
-          </ul>
-          <p>I had a lot of fun with those challenges.</p>
-        </sl-details>
-        <sl-details summary="Tenzing Memo" class="custom-icons">
-          <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
-          <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
-          <sl-tag variant="neutral">Ruby on Rails</sl-tag>
-          <sl-tag variant="neutral">Python</sl-tag>
-          <sl-tag variant="neutral">Web Development</sl-tag>
-          <p>Tenzing Memo was in the very early stages of my career, and as such I was mainly there to learn.</p>
-          <p>Through weekly agile meetings I discovered how developers meet business needs with technological solutions.</p>
-          <p>For example, Tenzing Memo was also in its early stages at the time I joined. The business needed to get it's core product, an AI-driven stock market analysis tool, into the hands of customers as quickly and effectively as possible.</p>
-          <p>The lead developers then opted to build the web application using Ruby on Rails for it's quick and agile development process.</p>
-          <p>Additionally, we used Python to interface with the core ChatGPT scripts to deliver and manipulate the data.</p>
-          <p>I had the opportunity to build a route that generated downloadable documents based on user queries, which I also wrote unit tests for.</p>
-          <a href="https://www.tenzingmemo.com" target="_blank">Check out Tenzing Memo</a>
-        </sl-details>
-        <sl-details summary="Aayats" class="custom-icons">
-          <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
-          <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
-          <sl-tag variant="neutral">Flutter</sl-tag>
-          <sl-tag variant="neutral">Express.js</sl-tag>
-          <sl-tag variant="neutral">MongoDB</sl-tag>
-          <sl-tag variant="neutral">Full Stack Development</sl-tag>
-          <sl-tag variant="neutral">Mobile Development</sl-tag>
-          <p>By the time I was accepted to work for and contribute to Aayats, I had enough knowledge to learn and develop in a new framework (Flutter)</p>
-          <p>The development team for this application was much larger than teams I had worked on before, 14 developers in total while I was there.</p>
-          <p>The business was a very early stage startup and wanted to ship both a web application and a mobile application as it's core products.</p>
-          <p>I had the opportunity to lead a team of myself and two other developers to build the end-to-end systems for updating user info, real-time chat, and user settings. I also proposed and implemented a local containerized database solution to make the development process more clean and efficient across a larger team.</p>
-          <a href="https://www.aayats.com/?srsltid=AfmBOorKuV2KA4BYRbQEnycLBRR3p94iY6lkXemsPPzCUnJmxJvMAEJQ">Check out Aayats</a>
-        </sl-details>
-        <sl-details summary="Flirt" class="custom-icons">
-          <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
-          <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
-          <sl-tag variant="neutral">React Native</sl-tag>
-          <sl-tag variant="neutral">Full Stack Development</sl-tag>
-          <sl-tag variant="neutral">Mobile Development</sl-tag>
-          <p>I got offered a contract to add some features to Flirt, a mobile dating app that was a work in progress.</p>
-          <p>The founder had tested his unique idea for a dating app on some college campuses with success and needed some independent contributors to add features before he was ready to ship the minimum viable product.</p>
-          <p>At Flirt I had the opportunity to develop user interfaces involving displaying the profiles of potential matches to users across various screens.</p>
-          <p>One of the interesting challenges here was state management, particularly involving date times.</p>
-        </sl-details>
-      </sl-tab-panel>
-    </sl-tab-group>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+        <a href="https://github.com/NoahSaberhagen/appliance-tracker" target="_blank" style="display: flex; justify-content: center;">Check out Appliance Tracker on Github</a>
+      </sl-card>
+    </sl-tab-panel>
+    <sl-tab-panel name="independent contributor">
+      <p>I've worked with numerous clients to build web and mobile applications for their businesses. Details below.</p>
+      <sl-details summary="Neobyte" class="custom-icons">
+        <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
+        <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
+        <sl-tag variant="neutral">Typescript</sl-tag>
+        <sl-tag variant="neutral">Amazon Web Services</sl-tag>
+        <sl-tag variant="neutral">Full Stack Development</sl-tag>
+        <sl-tag variant="neutral">Mobile Development</sl-tag>
+        <p>For two years I worked with another developer to build a mobile podcast streaming service from the ground up: Neobyte.</p>
+        <p>The other developer was also the founder and my mentor, and his teachings continue to be invaluable to this day.</p>
+        <p>At Neobyte I had the opportunity to implement features and fixes on a huge variety of full stack issues, such as:</p>
+        <ul>
+          <li>User interface design and navigation using React Native with Expo</li>
+          <li>API development with tRPC</li>
+          <li>User authentication, sign-in with Apple and Google, JSON Web Tokens (JWT)</li>
+          <li>Integrating multiple servers and databases (SQL and Elasticsearch)</li>
+          <li>Dependency injection patterns</li>
+          <li>...and many more!</li>
+        </ul>
+        <p>I had a lot of fun with those challenges.</p>
+      </sl-details>
+      <sl-details summary="Tenzing Memo" class="custom-icons">
+        <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
+        <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
+        <sl-tag variant="neutral">Ruby on Rails</sl-tag>
+        <sl-tag variant="neutral">Python</sl-tag>
+        <sl-tag variant="neutral">Web Development</sl-tag>
+        <p>Tenzing Memo was in the very early stages of my career, and as such I was mainly there to learn.</p>
+        <p>Through weekly agile meetings I discovered how developers meet business needs with technological solutions.</p>
+        <p>For example, Tenzing Memo was also in its early stages at the time I joined. The business needed to get it's core product, an AI-driven stock market analysis tool, into the hands of customers as quickly and effectively as possible.</p>
+        <p>The lead developers then opted to build the web application using Ruby on Rails for it's quick and agile development process.</p>
+        <p>Additionally, we used Python to interface with the core ChatGPT scripts to deliver and manipulate the data.</p>
+        <p>I had the opportunity to build a route that generated downloadable documents based on user queries, which I also wrote unit tests for.</p>
+        <a href="https://www.tenzingmemo.com" target="_blank">Check out Tenzing Memo</a>
+      </sl-details>
+      <sl-details summary="Aayats" class="custom-icons">
+        <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
+        <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
+        <sl-tag variant="neutral">Flutter</sl-tag>
+        <sl-tag variant="neutral">Express.js</sl-tag>
+        <sl-tag variant="neutral">MongoDB</sl-tag>
+        <sl-tag variant="neutral">Full Stack Development</sl-tag>
+        <sl-tag variant="neutral">Mobile Development</sl-tag>
+        <p>By the time I was accepted to work for and contribute to Aayats, I had enough knowledge to learn and develop in a new framework (Flutter)</p>
+        <p>The development team for this application was much larger than teams I had worked on before, 14 developers in total while I was there.</p>
+        <p>The business was a very early stage startup and wanted to ship both a web application and a mobile application as it's core products.</p>
+        <p>I had the opportunity to lead a team of myself and two other developers to build the end-to-end systems for updating user info, real-time chat, and user settings. I also proposed and implemented a local containerized database solution to make the development process more clean and efficient across a larger team.</p>
+        <a href="https://www.aayats.com/?srsltid=AfmBOorKuV2KA4BYRbQEnycLBRR3p94iY6lkXemsPPzCUnJmxJvMAEJQ" target="_blank">Check out Aayats</a>
+      </sl-details>
+      <sl-details summary="Flirt" class="custom-icons">
+        <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
+        <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
+        <sl-tag variant="neutral">React Native</sl-tag>
+        <sl-tag variant="neutral">Full Stack Development</sl-tag>
+        <sl-tag variant="neutral">Mobile Development</sl-tag>
+        <p>I got offered a contract to add some features to Flirt, a mobile dating app that was a work in progress.</p>
+        <p>The founder had tested his unique idea for a dating app on some college campuses with success and needed some independent contributors to add features before he was ready to ship the minimum viable product.</p>
+        <p>At Flirt I had the opportunity to develop user interfaces involving displaying the profiles of potential matches to users across various screens.</p>
+        <p>One of the interesting challenges here was state management, particularly involving date times.</p>
+      </sl-details>
+    </sl-tab-panel>
+  </sl-tab-group>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
