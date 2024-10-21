@@ -8,12 +8,67 @@
     <title>Noah Saberhagen - Software Developer</title>
 </head>
 <body>
-    <h1>Noah Saberhagen - Software Developer</h1>
-    <h2>Delivering quality and forward-thinking solutions for your applications.</h2>
+    <h1>Noah Saberhagen</h1>
+    <h2>Delivering quality and forward-thinking software solutions.</h2>
     <sl-tab-group placement="start">
+      <sl-tab slot="nav" panel="about me">About Me</sl-tab>
       <sl-tab slot="nav" panel="solo projects">Solo Projects</sl-tab>
       <sl-tab slot="nav" panel="independent contractor">Independent Contractor</sl-tab>
 
+      <sl-tab-panel name="about me">
+        <div id="about-me-header">
+          <p>Welcome to my page!</p>
+        </div>
+        <sl-tab-group>
+          <sl-tab slot="nav" panel="core competencies">Core Competencies</sl-tab>
+
+          <sl-tab-panel name="core competencies">
+            <sl-tree>
+              <sl-tree-item>
+                Frontend Development
+                <sl-tree-item>Hypertext Markup Language (HTML) / Cascading Style Sheets (CSS)</sl-tree-item>
+                <sl-tree-item>Javascript / Typescript / Node.js</sl-tree-item>
+                <sl-tree-item>React / React Native</sl-tree-item>
+              </sl-tree-item>
+              <sl-tree-item>
+                Backend Development
+                <sl-tree-item>MySQL</sl-tree-item>
+                <sl-tree-item>Document Databases / NoSQL</sl-tree-item>
+                <sl-tree-item>Express.js</sl-tree-item>
+                <sl-tree-item>
+                  Object-Relational Mapping (ORM)
+                  <sl-tree-item>Kysely</sl-tree-item>
+                  <sl-tree-item>Prisma</sl-tree-item>
+                </sl-tree-item>
+              </sl-tree-item>
+              <sl-tree-item>
+                Application Programming Interface (API) Protocols
+                <sl-tree-item>Representational State Transfer (REST)</sl-tree-item>
+                <sl-tree-item>Typescript Remote Procedure Call (tRPC)</sl-tree-item>
+              </sl-tree-item>
+              <sl-tree-item>
+                Cloud Services
+                <sl-tree-item>
+                  Amazon Web Services
+                  <sl-tree-item>S3</sl-tree-item>
+                  <sl-tree-item>R2</sl-tree-item>
+                </sl-tree-item>
+                <sl-tree-item>MongoDB</sl-tree-item>
+                <sl-tree-item>Vercel</sl-tree-item>
+              </sl-tree-item>
+              <sl-tree-item>
+                Containerization
+                <sl-tree-item>Docker</sl-tree-item>
+              </sl-tree-item>
+              <sl-tree-item>
+                Version Control
+                <sl-tree-item>Git</sl-tree-item>
+                <sl-tree-item>Github / Gitlab</sl-tree-item>
+              </sl-tree-item>
+            </sl-tree>
+          </sl-tab-panel>
+        </sl-tab-group>
+      </sl-tab-panel>
       <sl-tab-panel name="solo projects"></sl-tab-panel>
       <sl-tab-panel name="independent contractor"></sl-tab-panel>
     </sl-tab-group>
