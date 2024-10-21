@@ -74,20 +74,21 @@
       </sl-tab-group>
     </sl-tab-panel>
     <sl-tab-panel name="solo projects">
-      <sl-card class="card-overview card">
-        <div style="display: flex; flex-direction: row; padding: 2rem;">
-          <div>
-            <strong>Appliance Tracker</strong>
-            <p>Appliance Tracker (work in progress) will help users to keep track of who is using household appliances in real time, as well as who's next in line to use them.</p>
-            <p>Users will be able to create accounts with Apple or Google credentials, make groups with other users, and make appliances.</p>
-            <p>When it's someone's turn to use an appliance, they'll be sent a push notification.</p>
-          </div>
-          <div style="display: flex; justify-content: center;">
-            <img id="appliance-tracker" src="./assets/appliance-tracker.png" alt="A screenshot of my app, appliance tracker">
-          </div>
+      <sl-details summary="Appliance Tracker" class="custom-icons">
+        <sl-icon name="plus-square" slot="expand-icon"></sl-icon>
+        <sl-icon name="dash-square" slot="collapse-icon"></sl-icon>
+        <sl-tag variant="neutral">Typescript</sl-tag>
+        <sl-tag variant="neutral">MongoDB</sl-tag>
+        <sl-tag variant="neutral">Full Stack Development</sl-tag>
+        <sl-tag variant="neutral">Mobile Development</sl-tag>
+        <div style="display: flex; justify-content: center; padding: 1rem">
+          <img id="appliance-tracker" src="./assets/appliance-tracker.png" alt="A screenshot of my app, appliance tracker">
         </div>
+        <p>Appliance Tracker (work in progress) will help users to keep track of who is using household appliances in real time, as well as who's next in line to use them.</p>
+        <p>Users will be able to create accounts with Apple or Google credentials, make groups with other users, and make appliances.</p>
+        <p>When it's someone's turn to use an appliance, they'll be sent a push notification.</p>
         <a href="https://github.com/NoahSaberhagen/appliance-tracker" target="_blank" style="display: flex; justify-content: center;">Check out Appliance Tracker on Github</a>
-      </sl-card>
+      </sl-details>
     </sl-tab-panel>
     <sl-tab-panel name="independent contributor">
       <p>I've worked with numerous clients to build web and mobile applications for their businesses. Details below.</p>
