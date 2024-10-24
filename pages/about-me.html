@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
+</head>
+<body>
+  <img id="headshot" src="./assets/noah-headshot.jpg" alt="A picture of my face.">
+  <p>Welcome to my page! I'm a software developer with 2 years of experience building web and mobile applications.</p>
+  <p>You can find me here:</p>
+  <a href="https://github.com/NoahSaberhagen" target="_blank">Github</a>
+  <a href="https://www.linkedin.com/in/noah-saberhagen-358637152/" target="_blank">LinkedIn</a>
+  <a href="mailto:noahsaberhagen@gmail.com">Contact me</a>
+  <sl-tab-group>
+    <sl-tab slot="nav" panel="core competencies">Core Competencies</sl-tab>
+    <sl-tab-panel name="core competencies">
+      <sl-tree>
+        <sl-tree-item>
+          Frontend Development
+          <sl-tree-item>Hypertext Markup Language (HTML) / Cascading Style Sheets (CSS)</sl-tree-item>
+          <sl-tree-item>Javascript / Typescript / Node.js</sl-tree-item>
+          <sl-tree-item>React / React Native</sl-tree-item>
+        </sl-tree-item>
+        <sl-tree-item>
+          Backend Development
+          <sl-tree-item>MySQL</sl-tree-item>
+          <sl-tree-item>
+            Document Databases / NoSQL
+            <sl-tree-item>MongoDB</sl-tree-item>
+            <sl-tree-item>Elasticsearch</sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item>Express.js</sl-tree-item>
+          <sl-tree-item>
+            Object-Relational Mapping (ORM)
+            <sl-tree-item>Kysely</sl-tree-item>
+            <sl-tree-item>Prisma</sl-tree-item>
+          </sl-tree-item>
+        </sl-tree-item>
+        <sl-tree-item>
+          Application Programming Interface (API) Protocols
+          <sl-tree-item>Representational State Transfer (REST)</sl-tree-item>
+          <sl-tree-item>Typescript Remote Procedure Call (tRPC)</sl-tree-item>
+        </sl-tree-item>
+        <sl-tree-item>
+          Cloud Services
+          <sl-tree-item>
+            Amazon Web Services
+            <sl-tree-item>S3</sl-tree-item>
+            <sl-tree-item>R2</sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item>Vercel</sl-tree-item>
+        </sl-tree-item>
+        <sl-tree-item>
+          Containerization
+          <sl-tree-item>Docker</sl-tree-item>
+        </sl-tree-item>
+        <sl-tree-item>
+          Version Control
+          <sl-tree-item>Git</sl-tree-item>
+          <sl-tree-item>Github / Gitlab</sl-tree-item>
+        </sl-tree-item>
+      </sl-tree>
+    </sl-tab-panel>
+  </sl-tab-group>
+</body>
+</html>
