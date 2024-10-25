@@ -1,20 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
-  font-family: var(--sl-font-sans);
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  z-index: 2;
 }
 
-#headshot {
-  width: 10rem;
+body {
+  background: #00030d;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
-#appliance-tracker {
-  height: 20rem;
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: visible;
+  z-index: 1;
 }
 
-.card {
-  width: 10rem;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h1, h2, h3 {
-  font-weight: 300;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5%;
 }
 
+ul {
+  list-style: none;
+}
+
+nav .title-button {
+  border: none;
+  border-radius: 10px;
+  background: none;
+  padding: 0px 20px;
+  font-weight: 200;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.15s ease-in;
+}
+
+nav .title-button:hover {
+  background-color: var(--sl-color-primary-500);
+  cursor: pointer;
+}
+
+.flavor-text {
+  color: var(--sl-color-primary-500)
+}
+
+.tree::part(base) {
+  color: white;
+}
+
+#name {
+  color: var(--sl-color-primary-500);
+  font-weight: 400;
+  font-size: 5rem;
+  z-index: 2;
+}
+
+#tagline {
+  color: #fff;
+  font-weight: 200;
+  font-size: 3rem;
+  z-index: 2;
+}

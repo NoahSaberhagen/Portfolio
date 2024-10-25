@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sl-theme-dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
-    <title>Noah Saberhagen - Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Noah Saberhagen | Dev</title>
 </head>
-<body style="padding: 1rem;">
-  <h1>Noah Saberhagen</h1>
-  <h2>Delivering quality and forward-thinking software solutions.</h2>
-  <sl-tab-group id="main-tab-group">
-    <sl-tab slot="nav" panel="about me">About Me</sl-tab>
-    <sl-tab slot="nav" panel="solo projects">Solo Projects</sl-tab>
-    <sl-tab slot="nav" panel="independent contributor">Independent Contributor</sl-tab>
-    <sl-tab-panel name="about me">
-      <sl-include src="./pages/about-me.html"></sl-include>
-    </sl-tab-panel>
-    <sl-tab-panel name="solo projects">
-      <sl-include src="./pages/solo-projects.html"></sl-include>
-    </sl-tab-panel>
-    <sl-tab-panel name="independent contributor">
-      <sl-include src="./pages/independent-contributor.html"></sl-include>
-    </sl-tab-panel>
-  </sl-tab-group>
+<body>
+  <canvas id="stars"></canvas>
+  <section id="title-screen">
+    <h2 id="name">Noah Saberhagen</h2>
+    <h3 id="tagline">full stack developer</h3>
+    <h4 id="tagline">discovering your solutions 🔭</h4>
+    <nav>
+      <button class="title-button" id="about-button">About</button>
+      <button class="title-button" id="portfolio-button">Portfolio</button>
+      <i class="fa fa-github" style="font-size:48px;color:white"></i>
+      <i class="fa fa-linkedin" style="font-size:48px;color:white"></i>
+    </nav>
+  </section>
+  <sl-include src="./pages/about.html"></sl-include>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
-  <script src="./index.js"></script>
+  <script src="./scripts/about.js"></script>
+  <script src="./scripts/star-background.js"></script>
 </body>
 </html>
+
