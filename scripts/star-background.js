@@ -8,7 +8,7 @@ const canvas = document.querySelector('#stars');
 const context = canvas.getContext('2d');
 
 let stars = [];
-let scale = 1
+let scale = window.devicePixelRatio || 1
 let pointerX, pointerY;
 let width, height;
 let velocity = {
@@ -105,13 +105,11 @@ function step() {
 };
 
 function resize() {
-  scale = window.devicePixelRatio || 1;
-
-  width = window.screen.width;
-  height = window.screen.height;
+  width = window.screen.availWidth;
+  height = window.screen.availHeight;
 
   canvas.width = width;
-  canvas.height = height - 120;
+  canvas.height = height;
 };
 
 function movePointer(x, y) {
